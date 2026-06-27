@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学号查询系统</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎓 学号查询系统</h1>
+            <p>输入您的学号查询成绩排名及通过状态</p>
+        </header>
+        
+        <main>
+            <div class="search-box">
+                <input type="text" id="studentId" placeholder="请输入学号" maxlength="20">
+                <button id="searchBtn">查询</button>
+            </div>
+            
+            <div id="result" class="result-box hidden">
+                <div class="result-content">
+                    <div id="resultText"></div>
+                </div>
+            </div>
+            
+            <div id="loading" class="loading hidden">
+                <div class="spinner"></div>
+                <p>查询中...</p>
+            </div>
+        </main>
+        
+        <footer>
+            <p>© 2026 学号查询系统</p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
